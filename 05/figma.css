@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    padding: 120px 96px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    width: 277px;
+    height: 247px;
+}
