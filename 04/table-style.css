@@ -1,0 +1,11 @@
+table {
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 5px;
+}
+
+th, td {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
