@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1dcdc;
+}
+
+.container {
+    width: 360px;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color: #FFF; 
+    padding: 56px 20px 91px 20px;
+}
+
+h1 {
+    margin: 23px 2px 17px;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menu-items {
+    padding: 0 4px 32px 4px;
+}
+
+.position-img {
+    width: 74px;
+    height: 74px; 
+    border-radius: 12px;
+    background-color: #EFEFEF; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position-title {
+    color: #C4C4C4; 
+    padding: 8px 0 0 0;
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu-position {
+    display: inline-block;
+    margin-right: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+ 
+.menu-position:last-child {
+    margin-right: 0;
+}
+
+.menu-position:hover .position-img {
+    background-color: #EAE2B7; 
+}
+
+.menu-position:hover .position-title {
+    color: black;
+}
+
+input {
+    width: 316px;
+    height: 44px;
+    border-radius: 12px;
+    background: #EFEFEF;
+    border: none;
+    padding: 15px;
+    margin: 0 0 29px  4px;
+}
+
+.menu-options {
+    padding: 0 4px;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+
+.option {
+    width: 316px;
+    height: 88px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option:last-child {
+    margin-bottom: 0;
+}
+
+.option-title {
+    color: #003049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 8px 0;
+}
+
+p {
+    color: #D62828;
+    font-size: 14px;
+    margin: 0;
+}
+
+.option-img {
+    padding: 0 12px 0 16px;
+}
+
+.last {
+    padding: 16px 6px 0 12px;
+}
