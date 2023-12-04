@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: #e1dcdc;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -16,6 +19,9 @@ body {
 
 h1 {
     margin: 23px 2px 17px;
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 button {
@@ -41,11 +47,8 @@ button {
 .position-title {
     color: #C4C4C4; 
     padding: 8px 0 0 0;
-    margin: 0;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .menu-position {
@@ -75,6 +78,10 @@ input {
     border: none;
     padding: 15px;
     margin: 0 0 29px  4px;
+    color: #999;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .menu-options {
@@ -83,10 +90,9 @@ input {
 
 h2 {
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     margin-bottom: 26px;
+    color: #003049;
 }
 
 .option {
@@ -108,16 +114,13 @@ h2 {
 .option-title {
     color: #003049;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin: 0 0 8px 0;
 }
 
 p {
     color: #D62828;
     font-size: 14px;
-    margin: 0;
 }
 
 .option-img {
