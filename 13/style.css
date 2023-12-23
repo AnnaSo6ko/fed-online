@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+}
+
+.body-line {
+    position: absolute;
+    background-color: #F9F9F9;
+    width: 7.8%;
+    height: 62vw;
+    left: 15.3%;
+    z-index: 0;
+}
+
+header {
+    padding: 3.5% 0 10% 0;
+}
+
+header, 
+main, 
+footer {
+    position: relative;
+}
+
+.container {
+    width: 76.8%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 28.3%;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: #000;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 1px;
+}
+
+.header-search {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a-effect:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 45%;
+    background-color: #F2994A;
+    border-radius: 8px;
+    width: 7px;
+    height: 7px;
+}
+
+li , .search-category {
+    position: relative;
+}
+
+.search-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MAIN */
+
+.main-row {
+    align-items: flex-start;
+}
+
+.main-content {
+    position: relative;
+    width: 55%;
+    min-width: 260px;
+}
+
+.main-image {
+    padding-top: 7px;
+    width: 35.3%;
+    min-width: 160px;
+}
+
+.content-text {
+    border-right: 1px solid #333333;
+    padding: 0 7vw 0 1vw;
+}
+
+h3 {
+    color: #F2994A;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%; 
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #000;
+    font-size: 4.3vw;
+    font-weight: 800;
+    line-height: 120%; 
+    letter-spacing: 1px;
+    margin: 2% 0 14% 0;
+}
+
+.content-line {
+    border-radius: 4px;
+    background-color: #F2994A;
+    width: 27.8%;
+    height: 6px;
+}
+
+.plus-icon {
+    position: absolute;
+    top: 4px;
+    right: 15%;
+}
+
+p {
+    max-width: 421px;
+    color: var(--Gray-2, #4F4F4F);
+    font-family: Roboto;
+    line-height: 180%;
+    letter-spacing: 1px;
+    margin: 24px 0 32px 0;
+    font-size: 1.05vw;
+}
+
+.content-social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-video {
+    max-width: 240px;
+}
+
+.video-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-play {
+    background-color: #3F9AB7;
+    width: 5.7vw;
+    height: 5.7vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-img {
+    width: 2vw;
+    padding-left: 0.3vw;
+}
+
+.video-text {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1.2vw;
+    font-weight: 700;
+    padding-left: 1.4vw;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.2vw;
+}
+
+
+.icon-hover,
+.social-icon  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-hover:hover {
+    background-color: #F2994A;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.icon-media {
+    width: auto;
+}
+
+.icon-media:hover {
+    filter: invert(1);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #3F9AB7;
+    margin-top: 51px;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.users-icon {
+    width: 33%;
+    height: 3.7vw;
+    min-height: 30px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon-2 {
+    top: 0;
+    left: -19px;
+}
+
+.icon-3 {
+    top: 0;
+    left: -39px;
+}
+
+.content-users {
+    display: flex;
+}
+
+h4 {
+    color: white;
+    font-size: 1.4vw;
+}
+h4 > strong {
+    font-weight: bold;
+}
