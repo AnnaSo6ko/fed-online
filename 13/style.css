@@ -204,6 +204,8 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 34px;
+    height: 34px;
 }
 
 .icon-hover:hover {
