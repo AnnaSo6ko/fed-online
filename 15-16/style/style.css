@@ -301,3 +301,170 @@ h5 {
     font-size: 24px;
     font-weight: 500;
 }
+
+
+@media (max-width: 1160px) {
+    .sticker {
+        bottom: 44px;
+        width: 80px;
+        height: 40px;
+    }
+    .sticker > div {
+        width: 14px;
+        height: 40px;
+    }
+    .sticker > span {
+        font-size: 16px;
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 1060px) {
+    main {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 936px) {
+    form {
+        height: 60px;
+    }
+    form > button > i.fa-magnifying-glass  {
+        font-size: 34px;
+    }
+    .header-user > a > img{
+        width: 60px;
+        height: 60px;
+    }
+    main {
+        padding-top: 60px;
+    }
+    .popular-episodes {
+        justify-content: flex-start;
+    }
+} 
+
+@media (max-width: 860px) {
+    .header-logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .line::before {
+        display: none;
+    }
+    main {
+        max-width: 85%;
+    }
+    form {
+        height: 30px;
+    }
+    form > button > i.fa-magnifying-glass  {
+        font-size: 24px;
+    }
+    .search-input {
+        height: 30px;
+    }
+    .search-input::placeholder {
+        font-size: 16px;
+    }
+    .header-user > a > img {
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        font-size: 56px;
+    }
+    .film-genre > ul > li > a {
+        font-size: 22px;
+    }
+    .film-genre > ul > li::after {
+        font-size: 18px;
+    }
+    .film-details > ul > li > a,
+    .film-details > ul > li > a > span,
+    .film-description {
+        font-size: 20px;
+    }
+    .film-rating > i {
+        font-size: 24px;
+        margin: 0 2px;
+    }
+    .film-watch {
+        padding: 50px 0;
+    }
+    .film-watch > button  {
+        width: 220px;
+        height: 54px;
+        font-size: 18px;
+    }
+    .film-watch > button:first-child {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    form {
+        margin-right: 16px;
+    }
+    .search-input {
+        width: 128px;
+    }
+    .film-genre > ul > li > a {
+        font-size: 18px;
+    }
+    li::after {
+        margin-left: 8px;
+    }
+    li {
+        margin-right: 8px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    .film-details > ul > li > a,
+    .film-details > ul > li > a > span {
+        font-size: 17px;
+    }
+    .film-genre > ul > li::after,
+    .film-details > ul > li::after  {
+        font-size: 12px;
+    }
+    .film-description {
+        font-size: 16px;
+    }
+    .film-rating > i {
+        font-size: 16px;
+    }
+    .film-watch {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .film-watch > button:first-child {
+        margin: 0 0 14px 0;
+    }
+    .popular-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .popular-title > .slider {
+        margin-top: 14px;
+    } 
+    .popular-episodes > div > a > img {
+        width: 140px;
+    }
+    .sticker {
+        bottom: 22px;
+        width: 68px;
+        height: 32px;
+    }
+    .sticker > div {
+        width: 14px;
+        height: 32px;
+    }
+    .sticker > span {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+} 
