@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #100E0E;
+}
+
+section {
+    max-width: 700px;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-first {
+    display: inline-grid;
+    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section-two {
+    margin: 80px 0;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+button {
+    padding: 16px 32px;
+    color: #0F89FA;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    background-color: rgb(0 0 0 / 0%);
+    border: 2px solid #0F89FA;
+    cursor: pointer;
+    max-height: 56px;
+    width: 193.33px;
+}
+
+button.bk-black {
+    background-color: #0D0B0B;
+}
+
+/* BUTTON 1 */
+
+.btn-fill:hover {
+    background-color: #0F89FA;
+    color: white;
+    transition: all 1s;
+}
+
+/* BUTTON 2 */
+
+.btn-glowing:hover {
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(15, 137, 250, 0.75);
+    -moz-box-shadow: 0px 0px 8px 4px rgba(15, 137, 250, 0.75);
+    box-shadow: 0px 0px 8px 4px rgba(15, 137, 250, 0.75);
+    transition: all 0.2s;
+}
+
+/* BUTTON 3 */
+
+.btn-fill-up {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-fill-up:hover {
+    color: white;
+    transition: color 0.5s;
+}
+
+.btn-fill-up::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0F89FA;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    transition: all 1s ease;
+}
+
+.btn-fill-up:hover::after {
+    height: 100%;
+}
+
+/* BUTTON 4 */
+
+.btn-slide {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-slide:hover {
+    color: white;
+    transition: color 0.2s;
+}
+
+.btn-slide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0F89FA;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-slide:hover::after {
+    width: 100%;
+}
+
+/* BUTTON 5 */
+
+.btn-raise {
+    position: relative;
+    top: 0;
+    transition: all 0.4s;
+}
+
+.btn-raise:hover {
+    top: -5px;
+    -webkit-box-shadow: 0px 10px 8px -5px rgba(15, 137, 250, 0.91);
+    -moz-box-shadow: 0px 10px 8px -5px rgba(15, 137, 250, 0.91);
+    box-shadow: 0px 10px 8px -5px rgba(15, 137, 250, 0.91);
+}
+
+/* BUTTON 6 */
+
+.btn-close {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-close:hover {
+    color: white;
+    transition: color 0.2s;
+}
+
+.btn-close::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0F89FA;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-close:hover::after {
+    width: 50%;
+}
+
+.btn-close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0F89FA;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-close:hover::before {
+    width: 50%;
+}
+
+/* BUTTON 7 */
+
+.btn-seven {
+    background-color: #0F89FA;
+    color: #0D0B0B;
+    overflow: hidden;
+}
+
+.btn-seven span {
+    display: inline-block;
+}
+
+.btn-top {
+    transform: translate(0,-40px);
+}
+
+.btn-down {
+    transform: translate(0,-24px);
+}
+
+@keyframes btn-TOP {
+    0% {
+        transform: translate(0,-40px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes btn-DOWN {
+    0% {
+        transform: translate(0,-24px);
+    }
+    100%{
+        transform: translate(0,15px);
+    }
+}
+
+.btn-seven:hover .btn-top {
+    animation-fill-mode: forwards;
+    animation-name: btn-TOP;
+    animation-duration: 0.5s;
+}
+
+.btn-seven:hover .btn-down {
+    animation-fill-mode: forwards;
+    animation-name: btn-DOWN;
+    animation-duration: 0.5s;
+}
+
+/* BUTTON 8 */
+
+.btn-hover {
+    position: relative;
+}
+
+.btn-posit {
+    position: absolute;
+    width: 51.5%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hover-first {
+    background-color: #0F89FA;
+    color: white;
+}
+
+.hover-two {
+    position: relative;
+    border-color: rgb(0 0 0 / 0%);
+}
+
+@keyframes btn-width {
+    from {
+        width: 51.5%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.btn-hover:hover .btn-posit {
+    animation-fill-mode: forwards;
+    animation-name: btn-width;
+    animation-duration: 1s;
+}
+
+/* BUTTON 9 */
+
+.btn-zoom {
+    transform: scale(0.7);
+}
+
+.btn-zoom:hover {
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+/* BUTTON 10 */
+
+.btn-ten {
+    position: relative;
+}
+
+.btn-offset {
+    border: 4px solid #0F89FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    transform:  translate(0,-1.5px);
+}
+
+.btn-border {
+    border: 4px solid #0F89FA;
+    width: 193px;
+    height: 56px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    transition: all 0.5s;
+}
+
+.btn-ten:hover .btn-border {
+    top: 0;
+    left: 0;
+}
+
+.btn-ten:hover .btn-offset {
+    background-color: #0F89FA;
+    color: white;
+    transform:  translate(0,0);
+}
+
+/* BUTTON 11 */
+
+.btn-explore {
+    padding: 16px 0 16px 32px;
+    width: 176px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-explore:hover {
+    width: 193px;
+    color: white;
+    background-color: #0F89FA;
+    transition: all 0.7s;
+}
+
+.btn-explore:hover::after {
+    content: url(../img/Arrow.svg);
+    transform: translate(10px, 3px);
+    transition: all 1s;
+}
+
+/* BUTTON 12  DIV-FANCY*/
+
+.div-fancy {
+    position: relative;
+    display: block;
+    z-index: 3;
+}
+
+.div-fancy::before, .div-fancy::after {
+    display: block;
+    content: " ";
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    z-index: 4;
+}
+
+.div-fancy::after {
+    width: 180px;
+    height: 33px;
+    opacity: 1;
+    border-left: 2px solid #0F89FA;
+    border-right: 2px solid #0F89FA;
+}
+
+.div-fancy::after {
+    top: -5px;
+    right: 4.5px;
+}
+
+.div-fancy::before {
+    width: 180px;
+    height: 34px;
+    opacity: 1;
+    border-left: 2px solid #0F89FA;
+    border-right: 2px solid #0F89FA;
+}
+
+.div-fancy::before {
+    bottom: -6px;
+    left: 6px;
+}
+
+.div-fancy:hover::before{
+    transition: height 0.3s linear;
+    height: 0;
+    opacity: 0.7;
+}
+
+.div-fancy:hover::after {
+    transition: height 0.3s linear;
+    height: 0;
+    opacity: 0.7;
+}
+
+/* BUTTON 12 BTN*/
+
+.btn-fancy {
+    position: relative;
+    display: block;
+    z-index: 3;
+}
+  
+.btn-fancy::before, .btn-fancy::after {
+    display: block;
+    content: " ";
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+  
+.btn-fancy::before {
+    top: -6.5px;
+    right: 4.5px;
+}
+  
+.btn-fancy::after {
+    top: -6.5px;
+    left: 4.5px;
+}
+  
+.btn-fancy::before {
+    width: 91px;
+    height: 64px;
+    opacity: 1;
+    border-top: 2px solid #0F89FA;
+    border-bottom: 2px solid #0F89FA;
+}
+
+.btn-fancy:hover::before{
+    transition: width 0.25s linear;
+    width: 0;
+    opacity: 0.7;
+}
+  
+.btn-fancy::after {
+    width: 91px;
+    height: 64px;
+    opacity: 1;
+    border-top: 2px solid #0F89FA;
+    border-bottom: 2px solid #0F89FA;
+}
+
+.btn-fancy:hover::after {
+    transition: width 0.25s linear;
+    width: 0;
+    opacity: 0.7;
+}
+
+/* BUTTON 13 */
+
+.posit-hover {
+    width: 118px;
+}
+
+.div-hover-two {
+    border-radius: 50px;
+    background-color: #0F89FA;
+    width: 58px;
+    transition: all 0.2s ease-in;
+}
+
+.btn-hover-two {
+    border: none;
+    color: white;
+    width: 118px;
+    padding: 16px 18px;
+}
+
+.div-hover-two:hover {
+    width: 118px;
+}
+
+/* BUTTON 14 */
+
+.btn-more {
+    display: block;
+    color: white;
+    position: relative;
+    width: 142px;
+    height: 56px;
+    padding: 0;
+    z-index: 2;
+    background: none;
+    border: none;
+    overflow: hidden;
+}
+
+.blue {
+    content: url(../img/blue.svg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.green {
+    content: url(../img/green.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.btn-more:hover .blue {
+    transform: translateX(-30px) skewY(90deg) skewX(10deg);
+    transition: all 0.2s;
+}
+
+.btn-more:hover .green {
+    transform: translateX(30px) skewY(90deg) skewX(10deg);
+    transition: all 0.2s;
+}
+
+.btn-more::after {
+    content: "";
+    position: absolute;
+    background-color: #0F89FA;
+    width: 0;
+    top: 0;
+    right: 50%;
+    height: 56px;
+    z-index: -1;
+}
+
+.btn-more:hover::after {
+    transition: all 0.3s;
+    width: 50%;
+}
+
+.btn-more::before {
+    content: "";
+    position: absolute;
+    background-color: #51B851;
+    width: 0;
+    top: 0;
+    left: 50%;
+    height: 56px;
+    z-index: -1;
+}
+
+.btn-more:hover::before {
+    transition: all 0.3s;
+    width: 50%;
+}
